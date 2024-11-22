@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  optimization:
+    build: ./optimization
+    ports:
+      - "5001:5000"
+  prediction:
+    build: ./prediction
+    ports:
+      - "5002:5000"
+  simulation:
+    build: ./simulation
+    ports:
+      - "5003:5000"
+  cryptography:
+    build: ./cryptography
+    ports:
+      - "5004:5000"
